@@ -28,6 +28,8 @@ export const NavMenu = styled.nav`
 `
 
 export const NavMenuBtn = styled.div`
+    max-width: 20%;
+    flex: 0 0 20%;
 
 `
 
@@ -35,6 +37,8 @@ export const NavMenuList = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
+    max-width: 80%;
+    flex: 0 0 80%;
 
     ul{
         margin-bottom: 0px;
@@ -50,7 +54,7 @@ export const NavMenuList = styled.div`
                 text-transform: uppercase;
                 display: flex;
                 align-items: center;
-                padding: 10px 9px;
+                padding: 10px 13px;
                 transition: all .2s ease-in-out;
                 text-decoration: none;
                 border-radius: 25px;

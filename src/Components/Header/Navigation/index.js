@@ -9,7 +9,7 @@ const Navigation = () => {
     <NavMenu>
       <div className="container">
         <div className="row">
-          <NavMenuBtn className="col-sm-3">
+          <NavMenuBtn className="col-sm-2">
             <Button className="btnCategorias">
               <span className="mr-2">
                 <IoIosMenu className="ioiosmenu" />
@@ -20,7 +20,7 @@ const Navigation = () => {
               </span>
             </Button>
           </NavMenuBtn>
-          <NavMenuList className="col-sm-9">
+          <NavMenuList className="col-sm-10">
             <ul className="list list-inline ml-auto">
               <li className="list-inline-item">
                 <Link to="/">Home</Link>
