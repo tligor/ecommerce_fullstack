@@ -4,17 +4,17 @@ import {
   HeaderStl,
   LogoLink,
   SeletorCountry,
-  HeaderSearch,
   HeaderUsuario,
   HeaderCarrinho,
   Contador,
 } from "./styles.ts";
 import logo from "../../assets/images/logo.png";
 import CountryDropDown from "../CountryDropDown/index.js";
-import { IoIosSearch } from "react-icons/io";
+import Searchbar from "../Header/Searchbar/index.js";
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import Button from "@mui/material/Button";
+import Navigation from "./Navigation/index.js";
 
 const Header = () => {
   return (
@@ -27,7 +27,6 @@ const Header = () => {
           </Anuncio>
         </div>
       </div>
-
       <HeaderStl>
         <div className="container">
           <div className="row">
@@ -38,18 +37,7 @@ const Header = () => {
             </div>
             <SeletorCountry className="col-sm-10 d-flex align-items-center">
               <CountryDropDown />
-
-              {/*Busca do Header começa aqui*/}
-
-              <HeaderSearch className="ml-3 mr-3">
-                <input type="text" placeholder="Busque produtos..." />
-                <Button>
-                  <IoIosSearch />
-                </Button>
-              </HeaderSearch>
-
-              {/*Busca do Header termina aqui*/}
-
+              <Searchbar />
               <HeaderUsuario className="d-flex align-items-center ml-auto">
                 <Button className="circle mr-3">
                   <FiUser />
@@ -70,6 +58,7 @@ const Header = () => {
           </div>
         </div>
       </HeaderStl>
+      <Navigation />
     </HeaderWrapper>
   );
 };
