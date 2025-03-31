@@ -15,8 +15,12 @@ import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import Button from "@mui/material/Button";
 import Navigation from "./Navigation/index.js";
+import { myContext } from "../../App.js";
+import { useContext } from "react";
 
 const Header = () => {
+  const context = useContext(myContext);
+
   return (
     <HeaderWrapper>
       <div className="top-strip">
@@ -36,7 +40,8 @@ const Header = () => {
               </LogoLink>
             </div>
             <SeletorCountry className="col-sm-10 d-flex align-items-center">
-              <CountryDropDown />
+              {context.countryList.length !== 0 && <CountryDropDown />}
+
               <Searchbar />
               <HeaderUsuario className="d-flex align-items-center ml-auto">
                 <Button className="circle mr-3">

@@ -29,3 +29,7 @@ node_modules/.cache/default-development/12.pack
 node_modules/.cache/default-development/13.pack
 node_modules/.cache/default-development/15.pack
 /node_modules/.cache/default-development
+/node_modules
+/node_modules
+node_modules/.cache/.eslintcache
+node_modules/.cache/.eslintcache

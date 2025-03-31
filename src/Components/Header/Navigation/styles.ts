@@ -47,14 +47,17 @@ export const NavMenuList = styled.div`
         li{
 
             a{
+                text-decoration: none;
+                
+                button{
                 font-size: 15px;
-                font-weight: 600;
+                font-weight: 500;
                 text-align: none;
-                color: rgba(0,0,0,.7);
+                color: rgba(0,0,0,.8);
                 text-transform: uppercase;
                 display: flex;
                 align-items: center;
-                padding: 10px 13px;
+                padding: 8px 15px;
                 transition: all .2s ease-in-out;
                 text-decoration: none;
                 border-radius: 25px;
@@ -68,6 +71,7 @@ export const NavMenuList = styled.div`
                     font-size: 20px;
                 }
             }
+        } 
         }
     }
     

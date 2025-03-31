@@ -105,6 +105,14 @@ export const ListaRegioes = styled.ul`
         padding: 10px 20px;
     }
 
+    button:hover{
+        background: #f1f1f1;
+
+        &.active{
+            background: #ccc;
+        }
+    }
+
     ::-webkit-scrollbar{
         width: 8px;
         height: 8px;

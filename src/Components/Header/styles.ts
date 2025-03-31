@@ -9,6 +9,8 @@ export const Anuncio = styled.p`
 `
 
 export const HeaderWrapper = styled.div`
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-bottom: 10px;
 
     .top-strip{
         padding: 8px 0px;

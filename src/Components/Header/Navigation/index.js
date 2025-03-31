@@ -23,25 +23,39 @@ const Navigation = () => {
           <NavMenuList className="col-sm-10">
             <ul className="list list-inline ml-auto">
               <li className="list-inline-item">
-                <Link to="/">Home</Link>
+                <Link to="/">
+                  <Button>Home</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Roupas</Link>
+                <Link to="/">
+                  <Button>Roupas</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Eletrônicos</Link>
+                <Link to="/">
+                  <Button>Eletrônicos</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Padaria</Link>
+                <Link to="/">
+                  <Button>Padaria</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Mercado</Link>
+                <Link to="/">
+                  <Button>Mercado</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Redes sociais</Link>
+                <Link to="/">
+                  <Button>Redes sociais</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Fale conosco</Link>
+                <Link to="/">
+                  <Button>Fale conosco</Button>
+                </Link>
               </li>
             </ul>
           </NavMenuList>
